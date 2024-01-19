@@ -19,3 +19,11 @@ Também teve uma importação de tabela de Excel usando pandas. Ainda adocionei 
 <br> https://plotly.com/python/reference/layout/yaxis/ </br>
 <br> https://plotly.com/python/getting-started/#installation </br>
 <br> https://www.youtube.com/watch?v=ebeBxiaYZRQ </br>
+
+## 2- Importação de arquivos CSV para python
+
+Usei um arquivo CSV para importar arquvios em Pyhton.
+
+##Referência
+<br> https://www.youtube.com/watch?v=AnJPtKLtc7o </br>
+

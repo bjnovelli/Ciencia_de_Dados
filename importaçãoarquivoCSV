@@ -1,0 +1,8 @@
+
+##Biblioca de analise de dados Pandas
+import pandas as pd
+tabela = pd.read_csv("Advertising.csv", sep=',')
+display (tabela)
+
+##Qual o total do plano investido da TV 
+print(tabela["TV"].sum())

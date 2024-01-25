@@ -24,6 +24,10 @@ Também teve uma importação de tabela de Excel usando pandas. Ainda adocionei 
 
 Usei um arquivo CSV para importar arquvios em Pyhton.
 
+
+
+## 3- Dashboad em Power BI-25-01-2024
+Realizei a construção de um DASHBOAD em Power BI, usando como refêrencia uma planilha de venda ficticia.
 ##Referência
-<br> https://www.youtube.com/watch?v=AnJPtKLtc7o </br>
+<br> https://www.youtube.com/watch?v=iH9Qx9R315A </br>
 

@@ -1,4 +1,4 @@
-# Ciencia de Dados
+# Ciência de Dados
 Esse repositório o objetivo é voltado para projetos em Ciência de Dados 
 
 

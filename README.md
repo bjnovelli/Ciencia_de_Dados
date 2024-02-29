@@ -25,6 +25,13 @@ Também teve uma importação de tabela de Excel usando pandas. Ainda adocionei 
 Usei um arquivo CSV para importar arquvios em Pyhton.
 
 
+## 3- Criação e analise de arquivos em Python - 29-02
+Eu usei a plafatorma jupyter para criação da tabela vendas em Python, foi usada a  biblioteca Panda.
+Também teve uma importação de tabela de Excel e foi postado um vídeo com a descrição da data de hoje 29-02.
+
+
+
+
 
 ## 3- Dashboad em Power BI-25-01-2024
 Realizei a construção de um DASHBOAD em Power BI, usando como refêrencia uma planilha de venda.

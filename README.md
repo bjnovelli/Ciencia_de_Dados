@@ -36,6 +36,4 @@ Também teve uma importação de tabela de Excel e foi postado um vídeo com a d
 ## 3- Dashboad em Power BI-25-01-2024
 Realizei a construção de um DASHBOAD em Power BI, usando como refêrencia uma planilha de venda.
 
-##Referência
-<br> https://www.youtube.com/watch?v=iH9Qx9R315A </br>
 

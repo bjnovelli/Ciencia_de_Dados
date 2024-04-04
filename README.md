@@ -37,3 +37,10 @@ Também teve uma importação de tabela de Excel e foi postado um vídeo com a d
 Realizei a construção de um DASHBOAD em Power BI, usando como refêrencia uma planilha de venda.
 
 
+
+
+## 4- Dashboad em Power BI-25-01-2024
+Realizei a construção de um código relativo a migração de pessoa para o Canada com o google colab. 
+Coloquei gráficos, ajustei datas. 
+
+

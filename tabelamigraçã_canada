@@ -1,0 +1,87 @@
+import pandas as pd
+df=pd.read_csv('/content/canadian_immegration_data.csv')
+df.info()
+df.set_index('Country', inplace=True)
+anos = list (map(str,range(1980,2014)))
+
+anos
+
+
+algeria = df.loc['Algeria',anos]
+algeria
+algeria_dict= { 'ano': algeria.index.tolist(), 'imigrantes':algeria.values.tolist()}
+dados_algeria = pd.DataFrame(algeria_dict)
+
+dados_algeria
+import matplotlib.pyplot as plt
+plt.figure(figsize=(8,4))
+plt.plot(dados_algeria['ano'], dados_algeria['imigrantes'])
+plt.title('Imigração da Albania')
+plt.xlabel('Ano')
+plt.ylabel('Número de imigrantes')
+plt.xticks (['1980', '1985','1990', '1995', '2000', '2005', '2010'])
+plt.show()
+
+
+fig, ax = plt.subplots(figsize = (8,4))
+ax.plot (dados_algeria['ano'], dados_algeria ['imigrantes'])
+ax.set_title('Imigração Algeria para o Canada')
+ax.set_xlabel('Ano')
+ax.set_ylabel( 'Número de imigrantes')
+
+ax.xaxis.set_major_locator(plt.MultipleLocator(5))
+plt.show()
+fig, axs = plt.subplots (1,2, figsize=(15,5))
+
+
+
+axs[0].plot(dados_algeria  ['ano'], dados_algeria['imigrantes'])
+axs[0].set_title('Imigração da Albania para Canada')
+axs[0].set_xlabel('Ano')
+axs[0].set_ylabel('Número de imigrantes')
+axs[0].xaxis.set_major_locator (plt.MultipleLocator(5))
+
+axs[1].boxplot(dados_algeria['imigrantes'])
+axs[1]. set_title('Boxplot da imigração para o Canada')
+axs[1].set_xlabel('Albania')
+axs[1]. set_ylabel ('Número de imigrantes')
+plt.show()
+
+dados_algeria.describe()
+
+fig, axs = plt.subplots( 2,2, figsize=(10,6))
+fig.subplots_adjust(hspace=0.5,wspace=0.3)
+
+
+axs[0,0].plot(df.loc['Albania', anos])
+axs [0,0].set_title ('Albania')
+axs[0,1].plot(df.loc['Colombia', anos])
+axs[0,1].set_title('Colombia')
+axs[1,0].plot(df.loc['Argentina', anos])
+axs[1,0].set_title ('Argentina')
+axs[1,1].plot(df.loc['Peru', anos])
+axs[1,1].set_title ('Peru')
+
+for ax in axs. flat:
+  ax.xaxis.set_major_locator(plt.MultipleLocator(5))
+
+for an in axs. flat:
+ ax.set_xlabel ('Ano')
+ ax.set_ylabel('Número de imigrantes')
+
+ ymin= 0
+ ymax= 7000
+
+ for ax in axs.ravel() :
+  ax.set_ylim(ymin,ymax)
+
+plt.show()
+import seaborn as sns
+
+sns.set_theme()
+
+
+top_10 = df.sort_values('Total', ascending=False).head(10)
+
+top_10
+sns.barplot(data=top_10, x=top_10.index, y='Total')

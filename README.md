@@ -6,6 +6,8 @@ Esse repositório o objetivo é voltado para projetos em Ciência de Dados
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
 
+![Jupyter Logo](https://jupyter.org/assets/homepage/main-logo.svg)
+
 # Sobre o projeto
 
 ## 1- Gráficos em Phyton
